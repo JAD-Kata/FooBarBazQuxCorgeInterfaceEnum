@@ -1,0 +1,124 @@
+{
+  "tests": [
+    {
+      "name": "Test EBar implements IBar",
+      "setup": "",
+      "run": "mvn -B test -Dtest=EBarTest#interfaceTest --file pom.xml",
+      "input": null,
+      "output": null,
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test Baz implements IBaz",
+      "setup": "",
+      "run": "mvn -B test -Dtest=BazTest#interfaceTest --file pom.xml",
+      "input": null,
+      "output": null,
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test Qux implements IQux",
+      "setup": "",
+      "run": "mvn -B test -Dtest=QuxTest#interfaceTest --file pom.xml",
+      "input": null,
+      "output": null,
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test Corge implements ICorge",
+      "setup": "",
+      "run": "mvn -B test -Dtest=CorgeTest#interfaceTest --file pom.xml",
+      "input": null,
+      "output": null,
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test Foo implements IFoo",
+      "setup": "",
+      "run": "mvn -B test -Dtest=FooTest#interfaceTest --file pom.xml",
+      "input": null,
+      "output": null,
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test EBar Enumeration 1/2",
+      "setup": "",
+      "run": "mvn -B test -Dtest=EBarTest#valuesTest --file pom.xml",
+      "input": null,
+      "output": null,
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test EBar Enumeration 2/2",
+      "setup": "",
+      "run": "mvn -B test -Dtest=EBarTest#valueOfTest --file pom.xml",
+      "input": null,
+      "output": null,
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 2
+    },
+    {
+      "name": "Test Corge-IFoo unidirectional association",
+      "setup": "",
+      "run": "mvn -B test -Dtest=CorgeTest#fooTest --file pom.xml",
+      "input": null,
+      "output": null,
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 3
+    },
+    {
+      "name": "Test Foo-IBar unidirectional aggregation",
+      "setup": "",
+      "run": "mvn -B test -Dtest=FooTest#barTest --file pom.xml",
+      "input": null,
+      "output": null,
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 2
+    },
+    {
+      "name": "Test Foo-IBaz unidirectional aggregation",
+      "setup": "",
+      "run": "mvn -B test -Dtest=FooTest#bazTest --file pom.xml",
+      "input": null,
+      "output": null,
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 2
+    },
+    {
+      "name": "Test Foo-IQux unidirectional composition",
+      "setup": "",
+      "run": "mvn -B test -Dtest=FooTest#quxTest --file pom.xml",
+      "input": null,
+      "output": null,
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 2
+    },
+    {
+      "name": "Test Foo-ICorge unidirectional association",
+      "setup": "",
+      "run": "mvn -B test -Dtest=FooTest#corgeTest --file pom.xml",
+      "input": null,
+      "output": null,
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 3
+    }
+  ]
+}
