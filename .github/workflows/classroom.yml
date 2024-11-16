@@ -30,7 +30,7 @@ jobs:
         with:
           test-name: Test IBar interface
           setup-command: ''
-          command: mvn -B test -Dtest=IBarTest#doAllTests --file pom.xml
+          command: mvn -B -q -fae test -Dtest=IBarTest#doAllTests --file pom.xml
           timeout: 1
           max-score: 1
 
@@ -40,7 +40,7 @@ jobs:
         with:
           test-name: Test IBaz interface
           setup-command: ''
-          command: mvn -B test -Dtest=IBazTest#doAllTests --file pom.xml
+          command: mvn -B -q -fae test -Dtest=IBazTest#doAllTests --file pom.xml
           timeout: 1
           max-score: 1
 
@@ -50,7 +50,7 @@ jobs:
         with:
           test-name: Test IQux interface
           setup-command: ''
-          command: mvn -B test -Dtest=IQuxTest#doAllTests --file pom.xml
+          command: mvn -B -q -fae test -Dtest=IQuxTest#doAllTests --file pom.xml
           timeout: 1
           max-score: 1
 
@@ -60,7 +60,7 @@ jobs:
         with:
           test-name: Test ICorge interface
           setup-command: ''
-          command: mvn -B test -Dtest=ICorgeTest#doAllTests --file pom.xml
+          command: mvn -B -q -fae test -Dtest=ICorgeTest#doAllTests --file pom.xml
           timeout: 1
           max-score: 1
 
@@ -70,7 +70,7 @@ jobs:
         with:
           test-name: Test IFoo interface
           setup-command: ''
-          command: mvn -B test -Dtest=IFooTest#doAllTests --file pom.xml
+          command: mvn -B -q -fae test -Dtest=IFooTest#doAllTests --file pom.xml
           timeout: 1
           max-score: 1
 
@@ -80,7 +80,7 @@ jobs:
         with:
           test-name: Test Bar class
           setup-command: ''
-          command: mvn -B test -Dtest=BarTest#doAllTests --file pom.xml
+          command: mvn -B -q -fae test -Dtest=BarTest#doAllTests --file pom.xml
           timeout: 1
           max-score: 2
 
@@ -90,7 +90,7 @@ jobs:
         with:
           test-name: Test EBaz enum
           setup-command: ''
-          command: mvn -B test -Dtest=EBazTest#doAllTests --file pom.xml
+          command: mvn -B -q -fae test -Dtest=EBazTest#doAllTests --file pom.xml
           timeout: 1
           max-score: 3
 
@@ -100,7 +100,7 @@ jobs:
         with:
           test-name: Test Qux class
           setup-command: ''
-          command: mvn -B test -Dtest=QuxTest#doAllTests --file pom.xml
+          command: mvn -B -q -fae test -Dtest=QuxTest#doAllTests --file pom.xml
           timeout: 1
           max-score: 2
 
@@ -110,7 +110,7 @@ jobs:
         with:
           test-name: Test Corge class
           setup-command: ''
-          command: mvn -B test -Dtest=CorgeTest#doAllTests --file pom.xml
+          command: mvn -B -q -fae test -Dtest=CorgeTest#doAllTests --file pom.xml
           timeout: 1
           max-score: 3
 
@@ -120,7 +120,7 @@ jobs:
         with:
           test-name: Test Foo class
           setup-command: ''
-          command: mvn -B test -Dtest=FooTest#doAllTests --file pom.xml
+          command: mvn -B -q -fae test -Dtest=FooTest#doAllTests --file pom.xml
           timeout: 1
           max-score: 5
 
