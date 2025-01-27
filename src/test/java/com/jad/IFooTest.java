@@ -4,8 +4,7 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 class IFooTest {
-    private static final int NB_OF_FIELDS = 0;
-    private static final int NB_OF_NON_CONSTRUCTOR_METHOD = 3;
+    private static final int NB_OF_NON_CONSTRUCTOR_METHOD = 2;
     private static Class<?> iFooClass;
 
     @BeforeAll
